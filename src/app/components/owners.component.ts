@@ -35,7 +35,7 @@ import { ApiService } from 'src/app/services/api.service';
             class="btn custom-theme"
             (click)="handleDetailView(owner)"
           >
-            View Pets Owned
+            View Pets
           </button>
         </div>
       </div>
