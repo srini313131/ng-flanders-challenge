@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+
+.d-block {
+  display: block;
+}
+.active-link {
+  color: blue;
+}
+.custom-theme {
+  background-color: #95bce2 !important;
+}
+.bg-img {
+  background-image: url("assets/image.jpg");
+}
+.loader-conatiner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+
+  &.left {
+    left: 45%;
+  }
+  &.middle {
+    left: 50%;
+  }
+  &.right {
+    left: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-login {
+    flex-direction: column;
+
+    img {
+      width: 100% !important;
+      height: 100px;
+    }
+    & > div {
+      height: 100vh;
+    }
+  }
+}
+
+.list-item {
+  background-color: $cyan-100;
+}
