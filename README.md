@@ -6,22 +6,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## About the App
+   This is simple app that lists pet owners and detail page that shows the pets owned by the owner.
+  The app implements Login & Logout functionality using the browser session storage.
+  The app implements protected routes using canActivate route guard. Unauthenticated users  trying to access the protected routes will be redirected to login page.
+  After sucessful Login user is redirected to "/owners" path which lists pet owners
+  clicking on "View Pets" shows the pets owned by the owner with the app url being "owners/{ownerName}"
+  Used Bootstrap for responsive layouts
+  
